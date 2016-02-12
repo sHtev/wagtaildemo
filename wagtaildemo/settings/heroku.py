@@ -30,7 +30,7 @@ if '.' in AWS_STORAGE_BUCKET_NAME:
     AWS_S3_CALLING_FORMAT = RegionPathCallingFormat()
 
 AWS_LOCATION = os.environ.get('AWS_LOCATION', '')
-DEFAULT_FILE_STORAGE = 'storages.backend.s3boto.S3BotoStorage'
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 MEDIA_URL = ''
 
 AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_KEY_ID']
