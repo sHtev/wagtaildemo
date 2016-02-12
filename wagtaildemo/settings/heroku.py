@@ -21,7 +21,7 @@ MEDIA_ROOT = '/media/'
 STATIC_ROOT = '/static/'
 
 AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_KEY_ID']
-AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_KEY']
+AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_ACCESS_KEY']
 
 try:
     from .local import *
