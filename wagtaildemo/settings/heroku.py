@@ -27,7 +27,7 @@ if '.' in AWS_STORAGE_BUCKET_NAME:
                     self, server, bucket)
             return 's3-%s.amazonaws.com' % (AWS_STORAGE_BUCKET_REGION,)
 
-    AWS_S3_CALLING_FORMAT = RegionPathCallingFormat()
+AWS_S3_CALLING_FORMAT = RegionPathCallingFormat()
 
 AWS_LOCATION = os.environ.get('AWS_LOCATION', '')
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
